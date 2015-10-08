@@ -26,8 +26,36 @@
 
 ## Jupter configuration
 
-- open this file (most likely path) for edition:  ~/.jupyter/jupyter_notebook_config.py
-- add the folowing lines:
-    - 1
-    - 2
+- open this file (most likely path) for edition (using nano, vim):  ~/.jupyter/jupyter_notebook_config.py
+- add the folowing lines at the top of the file:
+    - c = get_config()
+    - c.NotebookApp.password =u'sha1:d8831a....'  #Make sure to add the one created
+    - c.IPKernelApp.pylab = 'inline'
+    - c.NotebookApp.ip = '*'
+    - c.NotebookApp.open_browser = False
+    - c.NotebookApp.port = 8888
+
+## Running jupyter
+
+- Inside the Vm type:
+
+        $ screen
+- Type Enter and this will create a screen that you can deattach later, inside there type:
+
+        $ sudo jupyter notebook
+
+- To exit the screen, do Ctrl-A followed by Ctrl-D
+- This will bring back the terminal and you can exit,
+- To reattach the screen, type: 
+
+        $ screen -r
+- This will display the screen with jupyter running
+
+- Go to your VM ip and add port 8888 , http://<ip>:8888
+
+## Make sure
+
+- port 22 (ssh), 80 (http) and 8888 is available (inside the openstack dashboard)
+- you deattach and reattach the screen 
+
 
