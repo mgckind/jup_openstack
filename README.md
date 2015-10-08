@@ -55,7 +55,7 @@
         $ screen -r
 - This will display the screen with jupyter running
 
-- Go to your VM ip and add port 8888 , http://<ip>:8888
+- Go to your VM ip and add port 8888 , http://(ip):8888
 
 ## Make sure
 
