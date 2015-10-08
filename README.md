@@ -1,8 +1,12 @@
 # jup_openstack
-**Very** simple instructions for jupyter in openstack
+**Very** simple instructions for jupyter notebook in openstack
 
 ## Jupyter engine
-- After creating the instance (Ubuntu ideally), copy the script.sh in the VM
+- After creating the instance (Ubuntu ideally), copy the script.sh in the VM or just clone this repo
+
+        $ git clone https://github.com/mgckind/jup_openstack.git
+        $ cd jup_openstack
+
 - ssh to VM (make sure port 22 is open and it has a floating ip)
 - in the terminal run:
 
