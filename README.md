@@ -4,6 +4,7 @@
 - After creating the instance (Ubuntu ideally), copy the script.sh in the VM
 - ssh to VM (make sure port 22 is open and it has a floating ip)
 - in the terminal run:
+
         $ bash script.sh
 - reboot machine with:
 
