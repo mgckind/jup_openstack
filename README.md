@@ -5,7 +5,7 @@
 - ssh to VM (make sure port 22 is open and it has a floating ip)
 - in the terminal run:
 
-    $ bash script.sh
+        $ bash script.sh
 
 - reboot machine with:
 
