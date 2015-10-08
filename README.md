@@ -26,8 +26,12 @@
 
 ## Jupter configuration
 
-- open this file (most likely path) for edition (using nano, vim):  ~/.jupyter/jupyter_notebook_config.py
+- open this file (most likely path) for edition (using nano, vim): 
+
+        nano ~/.jupyter/jupyter_notebook_config.py
+
 - add the folowing lines at the top of the file:
+
     - c = get_config()
     - c.NotebookApp.password =u'sha1:d8831a....'  #Make sure to add the one created
     - c.IPKernelApp.pylab = 'inline'
@@ -37,7 +41,7 @@
 
 ## Running jupyter
 
-- Inside the Vm type:
+- Inside the VM (after ssh) type:
 
         $ screen
 - Type Enter and this will create a screen that you can deattach later, inside there type:
