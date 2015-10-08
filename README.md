@@ -9,19 +9,16 @@
 - reboot machine with:
 
         $ sudo reboot
-
 - Connect again and run:
 
         $ jupyter notebook --generate-config
-
 - Open ipython
 
     $ ipython
-
 - Inside ipython:
 
-    >>> from IPython.lib import passwd
-    >>> passwd()
+        >>> from IPython.lib import passwd
+        >>> passwd()
 
 - Enter password, and it'll print a hash that looks like u'sha1:d8831ac.....', make sure to copy that hash key
 - Exit ipython
